@@ -441,8 +441,7 @@ public class stm32Loader extends AbstractLibrarySupportLoader {
 		}
 		try {
 			mem.createInitializedBlock("Main Memory", api.toAddr(0x8000000), inStream, 0xFFFFF, monitor, false);
-		} catch (LockException | MemoryConflictException | AddressOverflowException | CancelledException
-				| DuplicateNameException e) {
+		} catch (LockException | MemoryConflictException | AddressOverflowException | CancelledException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
